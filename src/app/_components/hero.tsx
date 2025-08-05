@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Hero() {
     return(
-        <section className="bg-gradient-to-r from-blue-950 to-blue-800 text-white relative overflow-hidden">
+        <section className="bg-blue-900 text-white relative overflow-hidden">
 
             <div>
                 <Image 
@@ -23,16 +23,16 @@ export default function Hero() {
             <div className="container mx-auto pb-16 pt-16 px-4 relative">
                 <article className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div className="space-y-6">
-                        <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10">
+                        <h1 data-aos="fade-down" className="text-3xl md:text-4xl lg:text-5xl font-bold leading-10">
                             Sua oficina merece peças confiáveis, com entrega rápida e o melhor custo-benefício
                         </h1>
 
-                        <p className="lg:text-lg">
+                        <p data-aos="fade-right" className="lg:text-lg">
                             Distribuímos peças atomotivas de alta qualidade para carros nacionais e importados. Atendemos oficinas, auto centers e clientes finais com eficiência e agilidade.
                         </p>
 
                         <div>
-                            <a href="#" className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2"><WhatsappLogoIcon className="w-5 h-5" /> Contato via WhatsApp</a>
+                            <a data-aos="fade-up" data-aos-delay="500" href={`https://wa.me/5581987978247?text=Olá vim pelo site e gostaria de mais informações.`} target='_blank' className="bg-green-500 px-5 py-2 rounded-md font-semibold flex items-center justify-center w-fit gap-2"><WhatsappLogoIcon className="w-5 h-5" /> Contato via WhatsApp</a>
                         </div>
 
                         <div className="mt-8">
